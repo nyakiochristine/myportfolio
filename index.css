@@ -119,6 +119,8 @@ img {
 /* ----- Headlines and Paragraphs ----- */
 /* --------------------------------------- */
 
+
+
 h1,
 h2,
 h3 {
@@ -127,6 +129,26 @@ h3 {
     line-height: var(--line-height-small);
     color: var(--white);
 }
+
+
+.animate-name span {
+    animation: slideIn 3.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
 
 .heading-primary {
     line-height: 1;
@@ -158,6 +180,23 @@ h3 {
     font-size: var(--font-size-medium-1);
     margin-bottom: var(--gutter-small);
 }
+
+
+.animate-name span {
+    animation: slideIn 1.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 @media(max-width: 500px) {
     .heading-primary {
@@ -247,7 +286,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .pinkh3{
-    color: #ff3258;
+    color: #3c8888;
 }
 
 .btn--pink {
